@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Switch from "react-switch";
 
-
+export const Container = styled.div``;
 export const SwitchToggle = styled(Switch)``;
 export const ContainerCard = styled.div`
     display: flex;

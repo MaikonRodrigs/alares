@@ -11,7 +11,6 @@ const ICONS = css`
     opacity: .7;
   }
 `;
-
 export const Container = styled.div`
   border-bottom: 1px solid #c2c2c2;
 `;
@@ -26,6 +25,10 @@ export const Row = styled.div`
 `;
 export const Logo = styled.img`
   width: 40px;
+  cursor: pointer;
+  &:hover {
+    opacity: .7;
+  }
 `;
 export const RightRow = styled.div``;
 export const Icons = styled.div`
@@ -34,12 +37,10 @@ export const Icons = styled.div`
   align-items: center;
   gap: 20px;
 `;
-
 export const SwitchToggle = styled(Switch)``;
 export const IconShoppingCart = styled(ShoppingCart)`
   ${ICONS}
 `;
-
 export const IconAdmin = styled(Admin)`
   ${ICONS}
   margin-left: 10px;

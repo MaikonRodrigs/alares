@@ -1,16 +1,13 @@
-// import { useState } from 'react';
 import * as S from './styles';
 
 function Additional(i) {
-  if (i === '1') {
-    return <h1>GAMES</h1>
-  }
-  if (i === '2') {
-    return <h1>GAMES + FILMES</h1>
-  }
-  if (i === '3') {
-    return <h1>GAMES + FILMES + PLUS</h1>
-  }
+  const additionalInfo = {
+    '1': 'GAMES',
+    '2': 'GAMES + FILMES',
+    '3': 'GAMES + FILMES + PLUS',
+  };
+
+  return <h1>{additionalInfo[i]}</h1>;
 }
 
 function Cards(props) {
@@ -53,6 +50,7 @@ function Cards(props) {
           button={props.button}
           marginButton={props.marginButton}
           buttonDisplay={props.buttonDisplay}
+          onClick={props.onClick}
         >Contrate Já</S.Button>
       </S.Row>
     </S.Container>

@@ -35,7 +35,6 @@ export const BestFlat = styled.div`
   position: absolute;
   margin-top: -30px;
   background: ${({ theme }) => theme.colors.highlight};
-  /* border: 1px solid ${({ theme }) => theme.colors.highlight}; */
   padding: 7px 20px;
   border-radius: 10px;
   font-size: 14px;
@@ -160,8 +159,6 @@ export const Button = styled.div`
   margin-top: ${({ marginButton }) => (marginButton ? "" : "0px")};
   border-radius: 20px;
   background-color: ${({ theme }) => theme.colors.highlight};
-  /* background: ${({ button, theme }) =>
-    button ? theme.colors.secondary : theme.colors.primary}; */
   cursor: pointer;
   &:hover {
     opacity: 0.6;
