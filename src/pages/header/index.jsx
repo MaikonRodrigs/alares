@@ -20,6 +20,9 @@ function Header(props) {
   }
 
   function handleAdmin() {
+    if (cart) {
+      setCart(false)
+    }
     if (isAuth === 'true') {
       navigate('/admin');
     } else {
