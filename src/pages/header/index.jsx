@@ -17,6 +17,12 @@ function Header(props) {
   const LogoAlares = 'https://alaresinternet.com.br/wp-content/themes/alares/assets/_dist/images/template/vetor-1.svg'
   function handleLogoClick() {
     navigate('/');
+    if (cart) {
+      setCart(false);
+    } else if (adminArea) {
+      setAdminArea(false);
+    }
+    
   }
 
   function handleAdmin() {
