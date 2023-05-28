@@ -134,7 +134,8 @@ function Modal(props) {
     return (
       <S.ContainerFinish>
         <S.RowFinish>
-          <h1>Obrigado {userDados?.nome}</h1>
+          <h1>Obrigado</h1>
+          <h1>{userDados?.nome}</h1>
           <S.Message>Em breve entraremos em contato pelo e-mail: <span>{userDados?.email}</span>  </S.Message>
           <S.Button onClick={() => handleClickFinish()}>Voltar</S.Button>
         </S.RowFinish >

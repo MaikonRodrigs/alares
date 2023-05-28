@@ -75,14 +75,16 @@ export const RowFinish = styled.div`
   h1 {
     text-transform: capitalize;
     color: ${({ theme }) => theme.colors.primary};
-
-    margin-bottom: 20px;
+    
   }
-`;
+  `;
 
 export const Message = styled.h1`
   font-size: 16px;
   color: ${({ theme }) => theme.colors.primary};
+  background: rgba(255, 255, 255, .1);
+  padding: 10px;
+  width: 320px;
   span {
     text-transform: none;
     color: ${({ theme }) => theme.colors.primary};
