@@ -43,5 +43,4 @@ export const IconShoppingCart = styled(ShoppingCart)`
 `;
 export const IconAdmin = styled(Admin)`
   ${ICONS}
-  margin-left: 10px;
 `;

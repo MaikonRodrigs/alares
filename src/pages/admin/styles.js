@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   h1 {
     font-size: 24px;
-    margin-bottom: 16px;
+    margin: 16px 0;
     color: ${({ theme }) => theme.colors.text};
   }
 `;
@@ -20,7 +20,6 @@ export const Empty = styled.div`
   justify-content: center;
   width: 100%;
   height: 100px;
-  padding-bottom: 20px;
   color: ${({ theme }) => theme.colors.secondary};
 `;
 export const Table = styled.table`
@@ -60,7 +59,7 @@ export const IconsRow = styled.div`
 export const IconTrash = styled(Trash)`
   color: ${({ theme }) => theme.colors.highlight};
   width: 20px;
-  margin-right: 5px;
+  margin-right: 15px;
   cursor: pointer;
 `;
 export const IconEdit = styled(Edit)`
