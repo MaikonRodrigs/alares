@@ -22,37 +22,43 @@ function Admin() {
     }
   }, []);
 
+
   return (
     <S.Container>
-      <h1>Ultimas vendas</h1>
-      <S.Table>
-        <tbody>
-          {savedData.map((data, idx) => (
-            <S.Row key={data.email}>
-              <S.Cell>
-                <span>Nome: </span>
-                {data.nome}
-              </S.Cell>
-              <S.Cell>
-                <span>E-mail: </span>
-                {data.email}
-              </S.Cell>
-              <S.Cell>
-                <span>Telefone: </span>
-                {data.telefone}
-              </S.Cell>
-              <S.Cell>
-                <span>Serviço contratado: </span>
-                {data.service}
-              </S.Cell>
-              <S.IconsRow>
-                <S.IconEdit />
-                <S.IconTrash onClick={() => removeItem(idx)} />
-              </S.IconsRow>
-            </S.Row>
-          ))}
-        </tbody>
-      </S.Table>
+      {savedData.length === 0 && <span>Ainda não existe nenhuma venda...</span>}
+      {savedData.length >= 1 && (
+        <>
+          <h1>Ultimas vendas</h1>
+          <S.Table>
+            <tbody>
+              {savedData.map((data, idx) => (
+                <S.Row key={data.email}>
+                  <S.Cell>
+                    <span>Nome: </span>
+                    {data.nome}
+                  </S.Cell>
+                  <S.Cell>
+                    <span>E-mail: </span>
+                    {data.email}
+                  </S.Cell>
+                  <S.Cell>
+                    <span>Telefone: </span>
+                    {data.telefone}
+                  </S.Cell>
+                  <S.Cell>
+                    <span>Serviço contratado: </span>
+                    {data.service}
+                  </S.Cell>
+                  <S.IconsRow>
+                    <S.IconEdit />
+                    <S.IconTrash onClick={() => removeItem(idx)} />
+                  </S.IconsRow>
+                </S.Row>
+              ))}
+            </tbody>
+          </S.Table>
+        </>
+      )}
     </S.Container>
   );
 }
